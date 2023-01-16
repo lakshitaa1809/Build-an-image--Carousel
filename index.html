@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BUILD AN IMAGE CAROUSEL FROM SCRATCH</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="imagecarousel">
+        <div class="carouselphoto main">
+          <div class="number">1 / 3</div>
+          <img class="photo" src="./Images/beauty_of_nature_1.jpg" />
+        </div>
+        <div class="carouselphoto">
+          <div class="number">2 / 3</div>
+          <img class="photo" src="./Images/beauty_of_nature_11.jpg" />
+        </div>
+        <div class="carouselphoto">
+          <div class="number">3/ 3</div>
+          <img class="photo" src="./Images/beauty_of_nature_7.jpg" />
+        </div>
+        <div class="navigation">
+          <div class="prev nav-btn" onclick="plusslides(-1)"><</div>
+          <div class="next nav-btn" onclick="plusslides(1)">></div>
+        </div>
+        <div style="text-align: center">
+          <span class="dot" onclick="currentslide(1)"></span>
+          <span class="dot" onclick="currentslide(2)"></span>
+          <span class="dot" onclick="currentslide(3)"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
